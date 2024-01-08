@@ -34,5 +34,6 @@ for (let index = 10; index <= 100; index = index + 10) {
 }
 console.log("============ 100 to  10 ==============");
 for (let index = 100; index >= 10; index = index - 10) {
-  console.log(index);
+    console.log(index);
+
 }
