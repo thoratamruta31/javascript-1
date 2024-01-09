@@ -1,0 +1,86 @@
+const arrayNumbers = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+console.log("=============== Step  1 =====================");
+console.log(`Total elements available in array is: ${arrayNumbers.length}`);
+
+console.log("=============== Step  2 =====================");
+console.log(
+  `First element is:  ${arrayNumbers[0]} and Last element is: ${
+    arrayNumbers[arrayNumbers.length - 1]
+  }`
+);
+
+console.log("=============== Step  3 =====================");
+console.log(`Last third element is: ${arrayNumbers[arrayNumbers.length - 3]}`);
+
+console.log("=============== Step  4 =====================");
+for (const element of arrayNumbers) {
+  if (element % 2 == 0) {
+    console.log(element);
+  }
+}
+
+console.log("=============== Step  5 =====================");
+for (const element of arrayNumbers) {
+  if (element % 2 == 1) {
+    console.log(element);
+  }
+}
+
+console.log("=============== Step  6 =====================");
+const arrayNumber0 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+let sum1 = 0;
+for (const index in arrayNumber0) {
+  if (index % 2 == 0) {
+    const element = arrayNumber0[index];
+    console.log(element);
+    sum1 = sum1 + element;
+  }
+}
+console.log(`Sum of even posotioned element is:${sum1}`);
+
+console.log("=============== Step  7 =====================");
+const arrayNum = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+let sum2 = 0;
+for (const index in arrayNum) {
+  if (index % 2 == 1) {
+    const element = arrayNum[index];
+    console.log(element);
+    sum2 = sum2 + element;
+  }
+}
+console.log(`Sum of odd posotioned element is:${sum2}`);
+
+console.log("=============== Step 8  =====================");
+const arrayNumber = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+let sum = 0;
+for (const element of arrayNumber) {
+  console.log(element);
+  sum = sum + element;
+}
+console.log(`Sum of elements is ${sum}`);
+
+console.log("=============== Step 9  =====================");
+const arrayNumber1 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+for (const element of arrayNumber) {
+  if (element % 5 == 0) {
+    console.log(element);
+  }
+}
+
+console.log("=============== Step 10  =====================");
+const arrayNumber2 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+let isAvailable = arrayNumber2.includes(115);
+console.log("Is available:", isAvailable);
+
+console.log("=============== Step 11  =====================");
+let isAvailable23 = arrayNumber2.includes(23);
+console.log("Is available:", isAvailable23);
+
+console.log("=============== Step 12  =====================");
+const insertNum = arrayNumber.splice(3, 0, 55, 66);
+console.log("Updated array is:", arrayNumber);
+
+console.log("=============== Step 13  =====================");
+const originalArray = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+const deleteNum = originalArray.splice(4, 3);
+console.log("Updated array is:", originalArray);
