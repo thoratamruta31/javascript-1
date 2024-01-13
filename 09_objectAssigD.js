@@ -1,3 +1,11 @@
+let professor1 = {
+  name: "S.B.Patil",
+  age: 43,
+  designation: "Head of Department",
+  subject: "zoology",
+  address: "Rajgurunagar",
+};
+
 let professor = {
   name: "S.B.Patil",
   age: 43,
@@ -15,11 +23,10 @@ let professor = {
     "Certificate  in IFE course",
     "Certificate in Adv programming",
   ],
-  totalExp: "14 years",
 };
 
 console.log("=========== Step 1 =============");
-console.log(professor);
+console.log(professor1);
 
 console.log("=========== Step 2 =============");
 console.log(professor.degrees);
@@ -28,7 +35,9 @@ console.log("=========== Step 3 =============");
 console.table(professor.certificates);
 
 console.log("=========== Step 4 =============");
-console.log(`Added New property Total Experience is: ${professor.totalExp}`);
+professor.totalExp = "14 years";
+// console.log(`Added New property Total Experience is: ${professor.totalExp}`);
+console.log(JSON.stringify(professor));
 
 console.log("=========== Step 5 =============");
 console.log(`Original object:${professor.address}`);
@@ -50,7 +59,7 @@ console.log(
 );
 
 console.log("=========== Step 8 =============");
-console.log(professor);
+console.log(JSON.stringify(professor));
 
 console.log(
   "=========== Step 9 (traversing array using for of loop) ============="
