@@ -29,6 +29,7 @@ const arrayEmployee = [
   emp_viny,
   emp_mahi,
 ];
+console.log("======= complete employee details ============");
 for (const element of arrayEmployee) {
   element.getDetails();
 }
